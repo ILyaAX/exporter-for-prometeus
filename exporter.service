@@ -1,0 +1,13 @@
+[Unit]
+Description=Expose system metrics for Prometeus
+
+[Service]
+Type=idle
+ExecStart=/usr/local/bin/exporter.py
+KillMode=process
+SyslogIdentifier=exporter
+SyslogFacility=daemon
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
