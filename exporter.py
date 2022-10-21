@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from prometheus_client import start_http_server, Gauge, Info
 import time
 import subprocess
